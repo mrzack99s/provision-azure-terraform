@@ -302,8 +302,8 @@ resource "azurerm_linux_virtual_machine" "s-vm" {
   location                        = var.provide_objects[count.index]["location"]
   resource_group_name             = "tf-spoke-${var.provide_objects[count.index]["role"]}-rg"
   size                            = "Standard_B1s"
-  admin_username                  = "mrzaz"
-  admin_password                  = "mrzaz@123456"
+  admin_username                  = "user"
+  admin_password                  = "user@123456"
   disable_password_authentication = false
   network_interface_ids = [
     azurerm_network_interface.s-nic-vm[count.index].id,
@@ -333,8 +333,8 @@ resource "azurerm_linux_virtual_machine" "s-vm2" {
   location                        = var.provide_objects[count.index]["location"]
   resource_group_name             = "tf-spoke-${var.provide_objects[count.index]["role"]}-rg"
   size                            = "Standard_B1s"
-  admin_username                  = "mrzaz"
-  admin_password                  = "mrzaz@123456"
+  admin_username                  = "user"
+  admin_password                  = "user@123456"
   disable_password_authentication = false
   network_interface_ids = [
     azurerm_network_interface.s-nic-vm2[count.index].id,
