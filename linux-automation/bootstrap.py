@@ -2,8 +2,8 @@ from netmiko import ConnectHandler
 user = "user"
 passwd = "passwd"
 
-s_pip = 'x.x.x.x'
-e_pip = 'x.x.x.x'
+s_pip = 'x.x.x.x'       #Southeast Asia Public IP
+e_pip = 'x.x.x.x'       #East Asia Public IP
 
 device1 = {
     'device_type': 'linux',
